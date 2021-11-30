@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: "Times New Roman";
-    background-image: url("../img/computer.jpg");
+    background-image: url("/assets/img/computer.jpg");
     background-size: 100vw 100vh;
     background-attachment: fixed;
     align-items: center;
@@ -222,6 +222,5 @@ div a{
 
     .footer__nav {
       flex: 2 0px;
-    }
-  }
-
+    }}
+  
