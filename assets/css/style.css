@@ -43,6 +43,11 @@ body{
     width: 1440px;
 }
 
+.logoimg{
+  display: flex;
+  justify-content: center;
+}
+
 
 .linksm{
     list-style: none;
@@ -71,16 +76,13 @@ body{
     
 }
 
-.logo{
-    background-image: url('../img/logo.svg');
-}
 
 .imagenPrincipal{
     text-align: start;
-    background-image: url('../img/1.jpg.webp');
+    background-image: url('../img/wood.jpg');
+    background-size: 100% 100%;
     min-height: 700px;
-    padding-left: 60px;
-    padding-top: 60px;
+  
 
 }
 
