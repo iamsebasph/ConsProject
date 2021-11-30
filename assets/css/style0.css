@@ -13,6 +13,7 @@ body {
     background-size: 100vw 100vh;
     background-attachment: fixed;
     align-items: center;
+    min-height: 700px;
 }
 
 h4 {
@@ -32,6 +33,7 @@ div a{
 }
 
 .container {
+  padding-top: 80px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -41,6 +43,8 @@ div a{
   grid-auto-flow: row;
   grid-template-areas:
     "celular Compu tele consolas";
+    min-height: 300px;
+    
 }
 
 .celular { grid-area: celular; }
