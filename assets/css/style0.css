@@ -13,10 +13,12 @@ body {
     background-size: 100vw 100vh;
     background-attachment: fixed;
     align-items: center;
-    min-height: 700px;
+    min-height: 600px;
 }
 
 h4 {
+  padding-top: 100px;
+  padding-bottom: 0px;
     color: black;
     text-align: center;
     margin: 0;
@@ -25,8 +27,9 @@ h4 {
 }
 
 div {
-    padding-top: 150px;
+    padding-top: 50px;
     text-align: center;
+
 }
 div a{
     text-decoration: none;
