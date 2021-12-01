@@ -1,0 +1,314 @@
+@font-face {
+    font-family:sans-serif;
+    src: url('<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">');
+}
+*{
+    font-family: 'Work Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0
+}
+
+.blackMenu{
+    background-color: black;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 10px;
+
+}
+
+.linksblack{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.linkbstyle{
+    color: white;
+    text-decoration: none;
+    margin: 0 20px 0 0;
+    font-size: 12px;
+
+}
+.menu{
+    background-color: white;
+    padding-top:7px;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-bottom: 7px;
+    width: 1440px;
+}
+
+
+.linksm{
+    list-style: none;
+    display: flex;
+    justify-content:start;
+}
+
+.linkstyle{
+    color: black;
+    text-decoration: none;
+    margin: 0 20px 0 20px;
+    letter-spacing: 1.25px;
+    font-size: 18px;
+}
+
+.catalogue{
+    font-size: 25px;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: white;
+    background-color: black;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  .footer > * {
+    flex:  1 100%;
+  }
+
+  .footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+  }
+
+  .footer__logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+  }
+
+  .footer__addr h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .nav__title {
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .footer address {
+    font-style: normal;
+    color: white;
+  }
+
+  .footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: rgb(33, 33, 33, 0.07);
+    border-radius: 100px;
+    color: #2f2f2f;
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+  }
+
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .footer li {
+    line-height: 2em;
+  }
+
+  .footer a {
+    text-decoration: none;
+  }
+
+  .footer__nav {
+    display: flex;
+      flex-flow: row wrap;
+  }
+
+  .footer__nav > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+  }
+
+  .nav__ul a {
+    color: #999;
+  }
+
+  .nav__ul--extra {
+    column-count: 2;
+    column-gap: 1.25em;
+  }
+
+  .legal {
+    display: flex;
+    flex-wrap: wrap;
+    color: #999;
+  }
+
+  .legal__links {
+    display: flex;
+    align-items: center;
+  }
+
+  .heart {
+    color: #2f2f2f;
+  }
+
+  @media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+      margin-left: auto;
+    }
+  }
+
+  @media screen and (min-width: 40.375em) {
+    .footer__nav > * {
+      flex: 1;
+    }
+
+    .nav__item--extra {
+      flex-grow: 2;
+    }
+
+    .footer__addr {
+      flex: 1 0px;
+    }
+
+    .footer__nav {
+      flex: 2 0px;
+    }
+  }
+
+.catalogue{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.product img{
+    width: 250px;
+}
+
+
+/*
+Video of card style: https://www.youtube.com/watch?v=yNBObeTWvio
+ */
+.card{
+    position: relative;
+    width: 320px;
+    height: 420px;
+    background: #122936;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card::before
+{
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #2196f3;
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+
+.card:hover::before
+{
+    top: -70%;
+    transform: skewY(390deg);
+}
+.card::after
+{
+    content: 'Phillips';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.1);
+}
+.card .imgbox
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+.card .imgbox img
+{
+    max-width: 100%;
+    transition: 0.5s;
+}
+
+.card:hover .imgbox img
+{
+    max-width: 50%;
+}
+
+.card .contentBox
+{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.card .contentBox h3
+{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spicing: 1px;
+}
+
+.card .contentBox .price
+{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card .contentBox .buy
+{
+    position: relative;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: #fff;
+    text-decoration: none;
+    background: #2f2f2f;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.card:hover .contentBox .buy
+{
+    top: 0;
+    opacity: 1;
+}
