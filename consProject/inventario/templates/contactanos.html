@@ -1,37 +1,50 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="referrer" content="origin">
   <meta charset="UTF-8">
   <title>Contacto</title>
-  <link rel="stylesheet" href="../assets/css/style2.css">
+  <link rel="stylesheet" href={% static 'assets/css/style2.css' %}>
 </head>
 <body>
 <nav>
             <div class="blackMenu">
                 <ul class="linksblack">
-                     <li><a class="linkbstyle" href="index.html">INICIO</a></li>
-                    <li><a class="linkbstyle" href="../pages/agregar.html">ADMIN</a></li>
+                     <li><a class="linkbstyle" href={% url 'inicio' %}>INICIO</a></li>
+                    <li><a class="linkbstyle" href={% url 'administador' %}>ADMIN</a></li>
                 </ul>
 
             </div>
             <div class="menu">
                 <ul class="linksm">
                     <li><a class="linkstyle" href="#"><img src="../assets/img/logo.svg" alt=""></a></li>
-                    <li><a class="linkstyle" href="index.html">INICIO</a></li>
-                    <li><a class="linkstyle" href="../pages/catalogue.html">PRODUCTOS</a></li>
-                    <li><a class="linkstyle" href="../pages/contactanos.html">CONTACTANOS</a></li>
-                    <li><a class="linkstyle" href="../pages/agregar.html">ADMIN</a></li>
+                    <li><a class="linkstyle" href={% url 'inicio' %}>INICIO</a></li>
+                    <li><a class="linkstyle" href={% url 'catalogoProductos' %}>PRODUCTOS</a></li>
+                    <li><a class="linkstyle" href={% url 'contacto' %}>CONTACTANOS</a></li>
+                    <li><a class="linkstyle" href={% url 'administador' %}>ADMIN</a></li>
                  </ul>
             </div>
         </nav>
-    <form action="https://formsubmit.co/angelmanuxii@gmail.com" method="POST">
-        <h2>CONTACTO</h2>
-        <input type="text" name="Nombre" placeholder="Nombre" required>
-        <input type="text" name="Correo" placeholder="Correo" required>
-        <input type="text" name="Telefono" placeholder="Telefono"required>
-        <textarea name="mensaje" placeholder="Algo mas..."></textarea>
-        <button type="submit" id="boton">ENVIAR</button>
-    </form>
+  <div class="container">
+  <h1>Contactanos</h1>
+  <form target="_blank" action="https://formsubmit.co/angelmanuxii@gmail.com" method="POST">
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+        </div>
+        <div class="col">
+          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+  </form>
+</div>
     <div>
 
      </div>

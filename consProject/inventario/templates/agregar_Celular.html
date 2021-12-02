@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Agregar</title>
+  <link rel="stylesheet" href={% static 'assets/css/style1.css' %}>
+</head>
+<body>
+
+
+
+    <form action="{% url 'saveProd' %}" method="post" enctype="multipart/form-data" class="form-register">
+        {% csrf_token %}
+
+
+
+    <h1 class="form__title">AGREGAR PRODUCTO</h1>
+    <input type="file" name="archivo" class="form_file">
+
+    <div class="container--flex">
+        <label for="" class="form__label">Nombre</label>
+        <input name="name" type="text" class="form__input" placeholder="Xiaomi">
+    </div>
+    <div class="container--flex">
+        <label for="" class="form__label">Descripcion</label>
+        <input name="description" type="text" class="form__input" placeholder="Es un celular">
+    </div>
+    <div class="container--flex">
+        <label for="" class="form__label">Precio</label>
+        <input name="price" type="text" class="form__input" placeholder="999...">
+    </div>
+    <input type="submit" class="form__submit">
+    <div class="consolas"><a type="button" id="boton" href={% url 'administador' %}>BACK</a></div>
+</body>
+</html>

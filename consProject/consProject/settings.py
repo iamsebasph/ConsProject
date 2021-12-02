@@ -1,4 +1,4 @@
-
+import os.path
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -67,7 +67,7 @@ WSGI_APPLICATION = 'consProject.wsgi.application'
 DATABASES = {
     'default':{
     'ENGINE':'django.db.backends.postgresql_psycopg2',
-    'NAME':'hardwtronica',
+    'NAME':'hardwtronica3',
     'USER':'postgres',
     'PASSWORD':'Sebas10yt',
     'HOST':'localhost',
@@ -118,3 +118,7 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

@@ -189,15 +189,13 @@ body{
     }
   }
 
+
 .catalogue{
-    display: flex;
     justify-content: center;
-    align-content: center;
-
-}
-
-.product img{
-    width: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 
@@ -206,8 +204,8 @@ Video of card style: https://www.youtube.com/watch?v=yNBObeTWvio
  */
 .card{
     position: relative;
-    width: 320px;
-    height: 420px;
+    width: 325px;
+    height: 550px;
     background: #122936;
     border-radius: 20px;
     overflow: hidden;

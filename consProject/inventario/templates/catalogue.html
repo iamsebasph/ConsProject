@@ -1,27 +1,28 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>catalogue</title>
-    <link rel="stylesheet" href="../assets/css/catalogue.css">
+    <link rel="stylesheet" href={% static 'assets/css/catalogue.css' %}>
 </head>
 <body>
 <header>
-        <nav>
+       <nav>
             <div class="blackMenu">
                 <ul class="linksblack">
-                    <li><a class="linkbstyle" href="#">INICIO</a></li>
-                    <li><a class="linkbstyle" href="#">ADMIN</a></li>
+                     <li><a class="linkbstyle" href={% url 'inicio' %}>INICIO</a></li>
+                    <li><a class="linkbstyle" href={% url 'administador' %}>ADMIN</a></li>
                 </ul>
 
             </div>
             <div class="menu">
                 <ul class="linksm">
                     <li><a class="linkstyle" href="#"><img src="../assets/img/logo.svg" alt=""></a></li>
-                    <li><a class="linkstyle" href="#">INICIO</a></li>
-                    <li><a class="linkstyle" href="#">PRODUCTOS</a></li>
-                    <li><a class="linkstyle" href="#">CONTACTANOS</a></li>
-                    <li><a class="linkstyle" href="#">ADMIN</a></li>
+                    <li><a class="linkstyle" href={% url 'inicio' %}>INICIO</a></li>
+                    <li><a class="linkstyle" href={% url 'catalogoProductos' %}>PRODUCTOS</a></li>
+                    <li><a class="linkstyle" href={% url 'contacto' %}>CONTACTANOS</a></li>
+                    <li><a class="linkstyle" href={% url 'administador' %}>ADMIN</a></li>
                  </ul>
             </div>
         </nav>
@@ -31,7 +32,7 @@
     <center>
 
   <h1>
-    Catalogue of all the products
+    Catalogo general
   </h1>
 
        </center>
@@ -39,25 +40,22 @@
 
 
 <div class="catalogue">
-
-       <div class="products">
-           <div class="row">
-               <div class="col-xs-10 col-sm-6 col-md-4 product">
-                   <div class="card">
+    {% for producto in lista %}
+                   <div class="card" id="celulares">
                        <div class="imgbox">
-                       <img src="../assets/img/pc_gamer.png">
+                       <img src="/media/{{ producto.image }}">
                            </div>
                        <div class="contentBox">
-                           <h3>PC gamer</h3>
-                           <h2 class="price">$10.000.000</h2>
+                           <h3>{{ producto.name }}</h3>
+                           <h2 class="price">{{producto.price}}</h2>
                            <a href="#" class="buy">Buy now</a>
                        </div>
                    </div>
-               </div>
-           </div>
-       </div>
 
+ {% endfor %}
 </div>
+
+
 
 <footer class="footer">
         <div class="footer__addr">
@@ -148,4 +146,4 @@
       </footer>
 
 </body>
-</ht
+</html>

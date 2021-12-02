@@ -1,16 +1,12 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href= {% static 'assets/css/style.css' %}>
+    <title>catalogue</title>
+    <link rel="stylesheet" href="../assets/css/catalogue.css">
 </head>
 <body>
-    <header>
+<header>
         <nav>
             <div class="blackMenu">
                 <ul class="linksblack">
@@ -21,160 +17,162 @@
             </div>
             <div class="menu">
                 <ul class="linksm">
-                    
+
                     <li><a class="linkstyle" href="index.html">INICIO</a></li>
                     <li><a class="linkstyle" href="../pages/catalogue.html">PRODUCTOS</a></li>
                     <li><a class="linkstyle" href="../pages/contactanos.html">CONTACTANOS</a></li>
                     <li><a class="linkstyle" href="../pages/agregar.html">ADMIN</a></li>
-                 </ul> 
+                 </ul>
             </div>
         </nav>
     </header>
-    <div class="imagenPrincipal">
-      <div class="logoimg">
-        <img src="../assets/img/logo.jpeg" >
-     </div>
-    </div>
 
-    <div class="here">
-        <p class="t5">ESTAMOS PARA SERVIRLE</p>
-        <h3 class="shop">EN HARDWTRONICA CREEMOS QUE NUESTROS CLIENTES MERECEN UNA ATENCIÓN SINCERA, PRIORITARIA, Y QUE DEMUESTRA LA ENTREGA QUE TENEMOS PARA CADA CASO.</h3>
+<div>
+    <center>
 
-    </div>
-    <div class="best"><p>NUESTRAS MEJORES VENTAS</p></div>
-    <div class="cards">
-        <div class="card">
-            <div class="imgPr">
-               <img src="../assets/img/gamer2.png" >
-            </div>
-            
-                <p class="textico"> Computador Gamer</p>
-                <p class="textico"> $101,000.00 COP</p>
-        </div>
+  <h1>
+    Catalogo general
+  </h1>
 
-        <div class="card">
-            <div class="imgPr">
-               <img src="../assets/img/gamer2.png">
-            </div>
-            
-                <p class="textico"> MEN´S NOBULL</p>
-                <p class="textico"> $153,000.00 COP</p>
-        </div>
-
-        <div class="card">
-            <div class="imgPr">
-               <img src="../assets/img/gamer2.png">
-            </div>
-            
-                <p class="textico"> DARK GREY RUNNER</p>
-                <p class="textico"> $557,000.00 COP</p>
-        </div>
-
-        <div class="card">
-            <div class="imgPr">
-               <img src="../assets/img/gamer2.png">
-            </div>
-            
-                <p class="textico"> COOL GREY</p>
-                <p class="textico"> $101,000.00 COP</p>
-        </div> 
-
-    </div>
+       </center>
+</div>
 
 
-    <div class="here">
-        <p class="t5">ESTAMOS PARA SERVIRLE</p>
-        <h3 class="shop">COMPRANDO EN NUESTRA PÁGINA APORTAS A UN PEQUEÑO EMPRENDIMIENTO COLOMBIANO QUE BUSCA LLEVARTE LO MEJOR DE LA TECNOLOGÍA A LA PUERTA DE TU CASA.</h3>
+<div class="catalogue">
+                   <div class="card" id="celulares">
+                       <div class="imgbox">
+                       <img src="../assets/img/iPhone13.png">
+                           </div>
+                       <div class="contentBox">
+                           <h3>iPhone 13</h3>
+                           <h2 class="price">$6.000.000</h2>
+                           <a href="#" class="buy">Buy now</a>
+                       </div>
+                   </div>
+                   <div class="card" id="computadores">
+                       <div class="imgbox">
+                       <img src="../assets/img/pc_gamer.png">
+                           </div>
+                       <div class="contentBox">
+                           <h3>PC gamer</h3>
+                           <h2 class="price">$10.000.000</h2>
+                           <a href="#" class="buy">Buy now</a>
+                       </div>
+                   </div>
+                   <div class="card" id="televisores">
+                       <div class="imgbox">
+                       <img src="../assets/img/Tv01.jpg">
+                           </div>
+                       <div class="contentBox">
+                           <h3>TV Oled LG</h3>
+                           <h2 class="price">$5.000.000</h2>
+                           <a href="#" class="buy">Buy now</a>
+                       </div>
+                   </div>
+                   <div class="card" id="consolas">
+                       <div class="imgbox">
+                       <img src="../assets/img/XboxSeriesS.jpg">
+                           </div>
+                       <div class="contentBox">
+                           <h3>Xbox Series S</h3>
+                           <h2 class="price">$1.500.000</h2>
+                           <a href="#" class="buy">Buy now</a>
+                       </div>
+                   </div>
+                   
 
-    </div>
 
-    <footer class="footer">
+</div>
+
+
+
+<footer class="footer">
         <div class="footer__addr">
           <h1 class="footer__logo"></h1>
-              
+
           <h2>Contacto</h2>
-          
+
           <address>
            Carrera 13#12-46 - Tunja - Colombia<br>
-                
+
             <a class="footer__btn" href="mailto:example@gmail.com"></a>
           </address>
         </div>
-        
+
         <ul class="footer__nav">
           <li class="nav__item">
             <h2 class="nav__title">Media</h2>
-      
+
             <ul class="nav__ul">
               <li>
                 <a href="#">En linea</a>
               </li>
-      
+
               <li>
                 <a href="#">Imprimir </a>
               </li>
-                  
+
               <li>
                 <a href="#">Anuncios</a>
               </li>
             </ul>
           </li>
-          
+
           <li class="nav__item nav__item--extra">
             <h2 class="nav__title">Tecnologia</h2>
-            
+
             <ul class="nav__ul nav__ul--extra">
               <li>
                 <a href="#">Diseño de Hardware</a>
               </li>
-              
+
               <li>
                 <a href="#">Componentes</a>
               </li>
-              
+
               <li>
                 <a href="#">Señales Digitales</a>
               </li>
-              
+
               <li>
                 <a href="#">Automatizacion</a>
               </li>
-              
+
               <li>
                 <a href="#">Inteligencia artificial</a>
               </li>
-              
+
               <li>
                 <a href="#">IoT</a>
               </li>
             </ul>
           </li>
-          
+
           <li class="nav__item">
             <h2 class="nav__title">Legal</h2>
-            
+
             <ul class="nav__ul">
               <li>
                 <a href="#">Politica de Privacidad</a>
               </li>
-              
+
               <li>
                 <a href="#">Terminos de Uso</a>
               </li>
-              
+
               <li>
                 <a href="#">Mapa</a>
               </li>
             </ul>
           </li>
         </ul>
-        
+
         <div class="legal">
-          <p>&copy; 2021 Hardwtronica. Todos los Derechos reservados.</p>
-          
-          
+          <p>&copy; 2021 Softronica. Todos los Derechos reservados.</p>
+
+
         </div>
       </footer>
-    
+
 </body>
 </html>
