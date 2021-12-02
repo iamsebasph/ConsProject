@@ -193,7 +193,7 @@ body{
     justify-content: center;
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 30px;
 }
 
 
@@ -307,21 +307,4 @@ Video of card style: https://www.youtube.com/watch?v=yNBObeTWvio
 {
     top: 0;
     opacity: 1;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.button{
-    position: relative;
-    background: #31384A;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-}
-.button:hover{
-    cursor: pointer;
 }
